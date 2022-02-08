@@ -1,10 +1,6 @@
-﻿using System.Reflection;
-using System.Text.Json;
-using Mathieu.Degand.FeatureMatching;
-using System.Threading.Tasks; 
-using System.IO; 
+﻿using System.Text.Json;
 
-
+namespace Mathieu.Degand.FeatureMatching.Console;
 
 class Program
 {
@@ -29,7 +25,7 @@ class Program
 
         foreach (var task in tasks)
         {
-            Console.WriteLine(JsonSerializer.Serialize(task.Points));
+            System.Console.WriteLine(JsonSerializer.Serialize(task.Points));
         }
         
     }
