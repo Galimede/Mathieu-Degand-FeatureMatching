@@ -34,7 +34,7 @@ public class ObjectDetection
         points.Add(new ObjectDetectionPoint(){X = 276,Y = 179});
         return new ObjectDetectionResult()
         {
-            ImageData = null,
+            ImageData = new []{Byte.MinValue},
             Points = points.ToList(),
         };
     }
